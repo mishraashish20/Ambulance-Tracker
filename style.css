@@ -51,3 +51,78 @@ nav ul li a {
 nav ul li a:hover {
   color: #00bcd4; 
 }
+.hero {
+  text-align: center;
+  padding: 150px 20px 100px;
+  /* background: rgba(0, 0, 0, 0.6); */
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff4d4d;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #cc0000;
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 60px 40px;
+  /* background: rgba(0, 0, 0, 0.7); */
+}
+
+.feature-card {
+  background: #b9d0eb;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  margin: 10px 0;
+  color: #ff4d4d;
+}
+
+/* About Section */
+.about {
+  padding: 60px 40px;
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.85); */
+}
+
+.about h2 {
+  margin-bottom: 15px;
+  color: #ff4d4d;
+}
+
+/* Footer */
+footer {
+  /* background: #000; */
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
