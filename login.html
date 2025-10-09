@@ -27,34 +27,33 @@
       <p class="signup-text">Don't have an account? <a href="register.html">Register</a></p>
     </form>
   </div>
-  <script>
-    
-document.getElementById("login-form").addEventListener("submit", function(e){
+<script>
+document.querySelector(".login-form").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const email = document.getElementById("email").value.trim();
   const pass  = document.getElementById("password").value;
 
-  // basic checks
-  if(!email || !pass){
+  if (!email || !pass) {
     alert("Please enter email and password");
     return;
   }
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     alert("Invalid email format");
     return;
   }
 
- 
-  if(email==="user@example.com" && pass==="pass123"){
-    localStorage.setItem("isLoggedIn","true");
-    window.location.href="index.html"; 
+  if (email === "mishraashish13579@gmail.com" && pass === "pass123") {
+    alert("Login successfully!");
+    window.location.href = "index.html"; 
   } else {
     alert("Invalid email or password");
   }
 });
 </script>
 
-  </script>
+
+
 </body>
 </html>

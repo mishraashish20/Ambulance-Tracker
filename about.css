@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar {
+   background-color: #33688a;;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffdd57;
+}
+
+/* Profile Section */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  
+  background-image: url("hos.jpg.jpg"); 
+  background-size: cover;       
+  background-position: center;   
+  background-repeat: no-repeat;
+}
+
+
+.profile-card {
+  background: white;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 30px;
+  animation: fadeIn 0.5s ease;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+   background-color: #33688a;;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-size: 22px;
+  color: #222;
+}
+
+.user-role {
+  font-size: 15px;
+  color: #666;
+}
+
+.profile-details {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.profile-details h3 {
+    background-color: #c7d8e2;;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 6px 0;
+  color: #333;
+}
+
+.profile-actions {
+  margin-top: 25px;
+}
+
+.profile-actions button {
+   background-color: #33688a;;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.profile-actions button:hover {
+   background-color: #33688a;;
+}
+
+.logout-btn {
+  background-color: #ff4d4d;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90%;
+    padding: 20px;
+  }
+}

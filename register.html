@@ -29,6 +29,49 @@
 
       <p>Already have an account? <a href="login.html">Login</a></p>
     </form>
+    <script>
+          
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault(); 
+
+   
+    const name = form.querySelector('input[type="text"]').value.trim();
+    const email = form.querySelector('input[type="email"]').value.trim();
+    const mobile = form.querySelector('input[type="number"]').value.trim();
+    const password = form.querySelectorAll('input[type="password"]')[0].value;
+    const confirmPassword = form.querySelectorAll('input[type="password"]')[1].value;
+
+   
+    if (!name || !email || !mobile || !password || !confirmPassword) {
+      alert(" Please fill all fields!");
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert(" Passwords do not match!");
+      return;
+    }
+
+    if (mobile.length !== 10) {
+      alert(" Mobile number must be 10 digits!");
+      return;
+    }
+
+    
+    const userData = { name, email, mobile, password };
+    localStorage.setItem("user", JSON.stringify(userData));
+
+    alert("✅ Registration successful!");
+
+  
+    window.location.href = "login.html";
+  });
+});
+
+    </script>
   </div>
 </body>
 </html>

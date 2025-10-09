@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile – ResQRide</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  
+  <header class="navbar">
+    <h1 class="logo">ResQRide</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+      <a href="profile.html" class="active">About</a>
+    </nav>
+  </header>
+
+ 
+  <section class="profile-container">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="ProfilePic.jpeg" alt="User Photo" class="profile-img">
+        <h2 class="username">User Name</h2>
+        <p class="user-role">Registered User</p>
+      </div>
+
+      <div class="profile-details">
+       
+        <p><strong>Email:</strong> xyz@gmail.com</p>
+        <p><strong>Phone:</strong> +91-xxxxxxxxxx</p>
+        <p><strong>Address:</strong> RKGIT, Ghaziabad, India</p>
+      </div>
+
+      <div class="profile-actions">
+        <button onclick="editProfile()">Edit Profile</button>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function editProfile() {
+      alert("Edit profile feature coming soon!");
+    }
+
+    function logout() {
+      alert("You have been logged out!");
+      window.location.href = "login.html";
+    }
+  </script>
+
+</body>
+</html>
